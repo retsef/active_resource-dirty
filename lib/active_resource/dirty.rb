@@ -49,7 +49,7 @@ module ActiveResource
     private
 
     def new_active_model_version?
-      ActiveModel::VERSION::MAJOR == 6
+      ActiveModel::VERSION::MAJOR >= 6
     end
 
     def method_missing(method_symbol, *arguments) #:nodoc:
